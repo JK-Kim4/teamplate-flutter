@@ -16,13 +16,22 @@ class _HomeState extends State<Home>{
 
     //init variable
 
-
     //Return Scaffold - Home
-    return const Scaffold(
-      backgroundColor: Colors.grey,
-      body: Text(
-        'this is body area'
+    return Scaffold(
+      backgroundColor: Colors.grey[200],
+      appBar: AppBar(
+        backgroundColor: Colors.blue[900],
+        title: Text('app title hear'),
+        centerTitle: true,
+        elevation: 0,
       ),
+      body: Container(
+        child: Column(
+          children: [
+            Text('container - column1'),
+          ],
+        )
+      )
     );
   }
 }
